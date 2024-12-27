@@ -1,0 +1,13 @@
+.jumbotron img{
+    width: 200px;
+    border: 5px solid ;
+}
+
+hr {
+    width: 250px;
+    border: 2px solid;
+}
+
+section{
+    min-height: 450px;
+}

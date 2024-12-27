@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #e0e0e0, #000);
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+
+        .form-container h1 {
+            margin-bottom: 20px;
+            font-size: 22px;
+            color: #333;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #333;
+            text-align: left;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="tel"],
+        .form-container textarea,
+        .form-container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .form-container textarea {
+            resize: none;
+            height: 80px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulir Pengisian Data</h1>
+        <form>
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" placeholder="Masukkan Nama Lengkap" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Masukkan Email" required>
+
+            <label for="telepon">Nomor Telepon</label>
+            <input type="tel" id="telepon" placeholder="Masukkan Nomor Telepon" required>
+
+            <label for="gender">Jenis Kelamin</label>
+            <select id="gender" required>
+                <option value="pria">Pria</option>
+                <option value="wanita">Wanita</option>
+            </select>
+
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" placeholder="Masukkan Alamat" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+</body>
+</html>
